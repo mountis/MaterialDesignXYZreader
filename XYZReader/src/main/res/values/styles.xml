@@ -15,14 +15,26 @@
      limitations under the License.
 -->
 
+
 <resources>
 
-    <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.Bacon" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/reda200</item>
 
     </style>
 
-    <style name="Theme.Bacon.Detail">
-        <item name="android:statusBarColor">@android:color/transparent</item>
+    <!-- based on stack overflow post: http://stackoverflow.com/questions/34185843/android-collapsing-toolbar-how-to-resize-the-text-so-that-it-shows-full-text-t-->
+    <style name="TextAppearance.Title.Expanded" parent="android:TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/detail_title_text_size</item>
+    </style>
+
+    <style name="TextAppearance.Title.Collapsed" parent="android:TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/detail_collapsed_title_text_size</item>
     </style>
 
 </resources>
